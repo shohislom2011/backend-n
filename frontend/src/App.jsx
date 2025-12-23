@@ -1,6 +1,16 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import axios from "axios"
+
+
 
 const App = () => {
+  const[Url , setUrl]=useState("http://backend-n.loc/backend/dasturlash")
+  const[dasturlash,setDasturlash]=useState([])
+
+  useEffect(()=>{
+    axios.get(Url).then((malum)=>setDasturlash(malum.data));
+  }, [])
+
   return (
     <div className='max-w-[1440px] m-auto'>
     <div className="navbar bg-black text-white bg-base-100 shadow-sm">
@@ -88,14 +98,27 @@ const App = () => {
 </div>
 
 
-
-
-<div className="join join-vertical w-auto m-auto h-[300px] lg:join-horizontal">
-  <button className="btn join-item">2,234</button>
-  <button className="btn join-item">5,500</button>
-  <button className="btn join-item">6,467</button>
+<div className="flex justify-evenly items-center gap-[25px] flex-wrap">
+  {kurslar.map((value)=>{
+    return(
+      <div className="card bg-base-100 image-full w-96 shadow-sm">
+  <figure>
+    <img className='w-full' src={value.rasm} alt="Shoes" />
+  </figure>
+  <div className="card-body">
+    <h2 className="card-title">{value.nomi}</h2>
+    <p>{value.malumoti}</p>
+    <div className="card-actions justify-end">
+      <button className="btn btn-primary">{value.narxi}</button>
+    </div>
+  </div>
+</div>
+    )
+  })}
 </div>
     </div>
+
+    
   )
 }
 

@@ -14,7 +14,11 @@ return [
     'modules' => [],
     'components' => [
         'request' => [
+            'baseUrl'=>'/backend',
             'csrfParam' => '_csrf-backend',
+            'parsers' => [
+        'application/json' => 'yii\web\JsonParser',
+    ]
         ],
         'user' => [
             'identityClass' => 'common\models\User',
@@ -37,14 +41,16 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        /*
+        
         'urlManager' => [
+            'scriptUrl'=>'/backend/index.php',
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                ['class' => 'yii\rest\UrlRule', 'controller' => ['dasturlash']],
             ],
         ],
-        */
+        
     ],
     'params' => $params,
 ];
