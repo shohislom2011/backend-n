@@ -4,9 +4,9 @@ use yii\rest\ActiveController;
 
 
 
-class DasturlashController extends ActiveController
+class DawnController extends ActiveController
 {
-    public $modelClass = 'common\models\Dasturlash';
+    public $modelClass = 'common\models\Dawn';
     
 
     public function behaviors()
