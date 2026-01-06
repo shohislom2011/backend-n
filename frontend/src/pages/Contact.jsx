@@ -7,7 +7,6 @@ const Contact = () => {
             <div className="h-a bg-gray-100 flex p-[50px] items-center justify-center px-6">
       <div className=" w-full grid justify-center grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         
-        {/* LEFT: Login Card */}
         <div className="bg-white rounded-2xl shadow-xl p-8 w-[300px] w-full max-w-md">
     
             <div>
@@ -39,9 +38,7 @@ const Contact = () => {
             Biz bilan bog'laning!
           </h1>
           <p className="text-gray-600 ">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-            et a id nisi.
+            IT sohasida o'qishga qiziqishingiz bolsa,kelajakka qadam qo'yishni istasangiz.Biz bilan aloqaga chiqsangiz, sizga hammayoqni batafsil tushuntirib berishadi   
           </p>
         </div>
 

@@ -6,32 +6,32 @@ const Kyber = () => {
           <div>
       <div className="mb-[40px] mt-[40px]">
         <div className="flex justify-center">
-          <h1 className='font-bold text-[40px]'>Roboto-texnika</h1>
+          <h1 className='font-bold text-[40px] max-sm:text-[30px]'>Kyber xafsizlig</h1>
           </div>
           <div className="flex justify-center">
           <button className='btn btn-dash bg-blue-700 text-white hover:bg-blue-900'><a href="https://web.telegram.org/a/#2059911642">kursga yozilish</a></button>
         </div>
-        <div className="flex justify-evenly">
+        <div className="flex flex-wrap justify-evenly">
           <div className="">
         <div className="pl-[25px] w-[300px]">
-          <h1 className='font-bold text-[20px]'>Kompyuter xavfsizligi.</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero tempore sequi, iusto et a minima debitis, officia culpa voluptate </p>
+          <h1 className='font-bold flex text-[25px] max-sm:justify-center'>Kompyuter xavfsizligi.</h1>
+          <p>Bu kursda siz tarmoq xavfsizligi, kompyuter viruslari va antiviruslar, elektron tijorat xavfsizligi kabi narsalarni o'rganasiz </p>
         </div>
 
 
          <div className="pl-[25px] w-[300px]">
-          <h1 className='font-bold text-[40px]'>Kali Linuks</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero tempore sequi, iusto et a minima debitis, officia culpa voluptate </p>
+          <h1 className='font-bold flex text-[25px] max-sm:justify-center'>Kali Linuks</h1>
+          <p>Bu kursda siz tarmoqni skanerlash, parollarni buzish va ularni xafsizligini tamirlash,fayllarni shifrlash kabi narsalarni o'rganasiz</p>
         </div>
         </div>
         <div className="">
           <div className="pl-[25px] w-[300px]">
-            <h1 className='font-bold text-[40px]'>python</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero tempore sequi, iusto et a minima debitis, officia culpa voluptate </p>
+            <h1 className='font-bold flex text-[25px] max-sm:justify-center'>python</h1>
+          <p>Bu kursda siz Veb-ilovalar yaratish, Ma'lumotlar bilan ishlash, Avtomatlashtirilgan vazifalarni dasturlash kabi narsalarni o'rganasiz</p>
           </div>
           <div className="pl-[25px] w-[300px]">
-            <h1 className='font-bold text-[20px]'>xavsizlik vositalari</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero tempore sequi, iusto et a minima debitis, officia culpa voluptate </p>
+            <h1 className='font-bold flex text-[25px] max-sm:justify-center'>xavsizlik vositalari</h1>
+          <p>Bu kursda siz kompyuter dasturlari, tizimlari va tarmoqlarini ruxsatsiz kirishdan himoya qilasiz shu kabi narsalarni o'rganasiz</p>
           </div>
           </div>
         </div>

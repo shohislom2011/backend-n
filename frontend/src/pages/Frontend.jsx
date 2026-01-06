@@ -5,32 +5,32 @@ const Frontend = () => {
     <div>
       <div className="mb-[40px] mt-[40px]">
         <div className="flex justify-center">
-          <h1 className='font-bold text-[40px]'>Frontend web developer</h1>
+          <h1 className='font-bold text-[40px] max-sm:text-[30px]'>Frontend web developer</h1>
           </div>
           <div className="flex justify-center">
           <button className='btn btn-dash bg-blue-700 text-white hover:bg-blue-900'><a href="https://web.telegram.org/a/#2059911642">kursga yozilish</a></button>
         </div>
-        <div className="flex justify-evenly">
+        <div className="flex flex-wrap justify-evenly ">
           <div className="">
         <div className="pl-[25px] w-[300px]">
-          <h1 className='font-bold text-[40px]'>HTML</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero tempore sequi, iusto et a minima debitis, officia culpa voluptate </p>
+          <h1 className='font-bold flex text-[40px] max-sm:justify-center'>HTML</h1>
+          <p>Bu kursda siz saytni brauser yordamida ochib ishlashingiz va sayt yaratishingiz mumkun</p>
         </div>
 
 
          <div className="pl-[25px] w-[300px]">
-          <h1 className='font-bold text-[40px]'>JS</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero tempore sequi, iusto et a minima debitis, officia culpa voluptate </p>
+          <h1 className='font-bold flex text-[40px] max-sm:justify-center'>JS</h1>
+          <p>Bu kursda siz animatsiya, sekundomer, tugmalarga har-hil funksiyalar berishingiz mumkin </p>
         </div>
         </div>
         <div className="">
           <div className="pl-[25px] w-[300px]">
-            <h1 className='font-bold text-[40px]'>css</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero tempore sequi, iusto et a minima debitis, officia culpa voluptate </p>
+            <h1 className='font-bold flex text-[40px] max-sm:justify-center'>css</h1>
+          <p>Bu kursda siz yaratayotgan saytingizni ko'rinishi, stayli, rangi, hajmini boshqarish mumkin  </p>
           </div>
           <div className="pl-[25px] w-[300px]">
-            <h1 className='font-bold text-[40px]'>React</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero tempore sequi, iusto et a minima debitis, officia culpa voluptate </p>
+            <h1 className='font-bold flex text-[40px] max-sm:justify-center'>React</h1>
+          <p>Bu kursda siz juda katta saytlarni har-hil kutibhonalar yordamida yaratishni o'rganasiz</p>
           </div>
           </div>
         </div>

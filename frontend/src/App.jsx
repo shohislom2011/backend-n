@@ -18,7 +18,7 @@ const App = () => {
     <BrowserRouter>
     <div className='max-w-[1440px] m-auto'>
 
-      <div className="navbar sticky top-0 z-10 bg-black text-white bg-base-100 shadow-sm">
+      <div className="navbar sticky top-0 z-10 bg-black text-white bg-base-100 shadow-sm ">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -27,19 +27,30 @@ const App = () => {
             <ul
               tabIndex="-1"
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-              <li><a>Item 1</a></li>
-              <li>
-                <a>Parent</a>
-                <ul className="p-2">
-                  <li><a>Submenu 1</a></li>
-                  <li><a>Submenu 2</a></li>
+             <ul className="menu menu-horizontal text-black px-1">
+            <Link to="/About"><li><a>Biz haqqimizda</a></li></Link>
+            <li>
+              <details>
+                <summary>qabullar</summary>
+                <ul className="p-2 bg-base-100 w-40 text-black z-1">
+                  <Link to='/Frontend'><li><a>frontend</a></li></Link>
+                  <Link to='/Backend'><li><a>Backend</a></li></Link>
+                  <Link to='/SMM'><li><a>SMM</a></li></Link>
+                  <Link to='/Robototex'><li><a>Roboto-texnika</a></li></Link>
+                  <Link to='/Grphik'><li><a>Graphik Design</a></li></Link>
+                  <Link to='/Kyber'><li><a>kyber xavsizlik</a></li></Link>
                 </ul>
-              </li>
-              <li><a>Item 3</a></li>
+              </details>
+            </li>
+            <Link to="/Contact"><li><a>biz bilan aloqa!</a></li></Link>
+          </ul>
             </ul>
           </div>
-          <Link to="/"><a className="btn btn-ghost hover:bg-gray text-xl">Meta IT School</a></Link>
+          <Link to="/"><a className="btn btn-ghost text-white hover:bg-gray text-xl max-sm:text-[20px]">Meta IT School</a></Link>
         </div>
+
+
+
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <Link to="/About"><li><a>Biz haqqimizda</a></li></Link>
@@ -51,7 +62,7 @@ const App = () => {
                   <Link to='/Backend'><li><a>Backend</a></li></Link>
                   <Link to='/SMM'><li><a>SMM</a></li></Link>
                   <Link to='/Robototex'><li><a>Roboto-texnika</a></li></Link>
-                  <Link to='/Grphik'><li><a>Graphik Design</a></li></Link>
+                  <Link to='/Grphik'><li><a>Soatxonlik</a></li></Link>
                   <Link to='/Kyber'><li><a>kyber xavsizlik</a></li></Link>
                 </ul>
               </details>
@@ -79,20 +90,25 @@ const App = () => {
       </Routes>
 
       
-<footer className="footer w-[100%] sm:footer-horizontal bg-neutral text-neutral-content grid-rows-2 p-10">
+<footer className="footer w-[100%] footer-horizontal bg-neutral text-neutral-content grid-rows-2 p-10 ">
   <nav>
     <h6 className="footer-title">Services</h6>
-    <a className="link link-hover">Branding</a>
-    <a className="link link-hover">Design</a>
-    <a className="link link-hover">Marketing</a>
-    <a className="link link-hover">Advertisement</a>
+       <ul className="flex flex-col gap-[3px]">
+                  <Link to='/Frontend'><li><a className="link link-hover">frontend</a></li></Link>
+                  <Link to='/Backend'><li><a className="link link-hover">Backend</a></li></Link>
+                  <Link to='/SMM'><li><a className="link link-hover">SMM</a></li></Link>
+                  <Link to='/Robototex'><li><a className="link link-hover">Roboto-texnika</a></li></Link>
+                  <Link to='/Grphik'><li><a className="link link-hover">Soatxonlik</a></li></Link>
+                  <Link to='/Kyber'><li><a className="link link-hover">kyber xavsizlik</a></li></Link>
+                </ul>
   </nav>
   <nav>
     <h6 className="footer-title">Company</h6>
-    <a className="link link-hover">About us</a>
-    <a className="link link-hover">Contact</a>
-    <a className="link link-hover">Jobs</a>
-    <a className="link link-hover">Press kit</a>
+    <ul>
+            <Link to="/Contact"><li><a className='link link-hover'>biz bilan aloqa!</a></li></Link>
+            <Link to="/About"><li><a className='link link-hover'>Biz haqqimizda</a></li></Link>
+          <Link to='/Krish'><a className='link link-hover'>Kirish</a></Link>
+    </ul>
   </nav>
   <nav>
     <h6 className="footer-title">Legal</h6>
@@ -102,10 +118,8 @@ const App = () => {
   </nav>
   <nav>
     <h6 className="footer-title">Social</h6>
-    <a className="link link-hover">Twitter</a>
-    <a className="link link-hover">Instagram</a>
-    <a className="link link-hover">Facebook</a>
-    <a className="link link-hover">GitHub</a>
+    <h1><a href="http://web.telegram.org/a/#2059911642" target="_blank" rel="noopener noreferrer">@metaitschool_admin</a></h1>
+    <h1><a href="https://www.instagram.com/metaitschool?igsh=MXdwdGxtcGMyZTkwMw==" className='link link-hover' target="_blank" rel="noopener noreferrer">Meta IT School</a></h1>
   </nav>
   <nav>
     <h6 className="footer-title">Explore</h6>

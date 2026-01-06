@@ -2,7 +2,7 @@ import React from 'react'
 
 const Krish = () => {
   return (
-    <div><div className="min-h-screen bg-gray-100 flex items-center justify-center px-6">
+    <div><div className="h-auto bg-gray-100 flex items-center justify-center px-6">
       <div className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         
         {/* LEFT: Login Card */}
@@ -10,7 +10,7 @@ const Krish = () => {
           <form className="space-y-6">
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">
-                Email
+                Ism.F
               </label>
               <input
                 type="email"
@@ -18,7 +18,17 @@ const Krish = () => {
                 className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-purple-500"
               />
             </div>
-
+            <ul className="menu menu-horizontal px-1">
+            <li>
+              <details>
+                <summary>qabullar</summary>
+                <ul className="p-2 bg-base-100 w-40 text-black z-1">
+                  
+                </ul>
+              </details>
+            </li>
+          </ul>
+              
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">
                 Password
@@ -29,11 +39,6 @@ const Krish = () => {
                 className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-purple-500"
               />
             </div>
-
-            <div className="text-sm text-gray-500 hover:text-purple-600 cursor-pointer">
-              Forgot password?
-            </div>
-
             <button
               type="submit"
               className="w-full bg-purple-600 text-white py-3 rounded-lg font-medium hover:bg-purple-700 transition"
