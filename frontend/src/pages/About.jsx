@@ -2,6 +2,8 @@ import { useState } from "react"
 import React from 'react'
 import { useEffect } from "react"
 import axios from "axios"
+import { BrowserRouter, Route, Routes, Link } from 'react-router-dom'
+import Krish from './Krish'
 
 
 const About = () => {
@@ -21,6 +23,8 @@ useEffect(() => {
 
 
   return (
+    <BrowserRouter>
+    
       <div>
 
            <div className="hero bg-base-200 h-a bg-white">
@@ -37,7 +41,10 @@ useEffect(() => {
                              Meta IT School - Andijon shaxri,Leninskiy kochasi , Megasef Dorixonasi tog'risida
                         </p>
                         <div className="flex max-lg:justify-center">
-                        <button className='btn btn-dash bg-blue-700 text-white hover:bg-blue-900'><a href="https://web.telegram.org/a/#2059911642">kursga yozilish</a></button>
+                        <Link to="/Krish"><button className="btn btn-primary">kursga yozilish</button></Link>
+                     <Routes>
+                        <Route path='/Krish' element={<Krish/>}/>
+                     </Routes>
                         </div>
                     </div>
                 </div>
@@ -46,7 +53,7 @@ useEffect(() => {
 
 
 
-                    <div className="w-100% h-a  bg-gray-300 rounded-t-3xl p-[20px] max-md:p-0">
+                    <div className="">
                 <div className="w-[100%] flex max-lg:flex-col  max-lg:justify-center h-a rounded-t-3xl bg-white">
                     <div className="h-[100%] flex flex-col justify-center items-center max-lg:justify-center max-lg:w-[100%] max-lg:text-center  w-[50%] ">
                         <div className="">
@@ -88,6 +95,7 @@ useEffect(() => {
                 </div>
             </div>
     </div>
+    </BrowserRouter>
   )
 }
 

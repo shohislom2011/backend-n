@@ -1,14 +1,21 @@
 import React from 'react'
+import { BrowserRouter, Route, Routes, Link } from 'react-router-dom'
+import Krish from './Krish'
 
 const Robototex = () => {
   return (
-    <div>   <div>
+    <BrowserRouter>
+    
+        <div>   <div>
       <div className=" mb-[40px] mt-[40px]">
         <div className="flex justify-center">
           <h1 className='font-bold text-[30px] max-sm:text-[25px]'>Roboto-texnika</h1>
           </div>
           <div className="flex justify-center">
-          <button className='btn btn-dash bg-blue-700 text-white hover:bg-blue-900'><a href="https://web.telegram.org/a/#2059911642">kursga yozilish</a></button>
+            <Link to="/Krish"><button className="btn btn-primary">kursga yozilish</button></Link>
+            <Routes>
+                        <Route path='/Krish' element={<Krish/>}/>
+            </Routes>
         </div>
         <div className="flex flex-wrap justify-evenly">
           <div className="">
@@ -36,6 +43,7 @@ const Robototex = () => {
         </div>
       </div>
     </div></div>
+    </BrowserRouter>
   )
 }
 

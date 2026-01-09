@@ -33,6 +33,7 @@ const Home = () => {
 
 
     return (
+<BrowserRouter>
 
         <div>
 
@@ -51,7 +52,10 @@ const Home = () => {
                             Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
                             quasi. In deleniti eaque aut repudiandae et a id nisi.
                         </p>
-                        <button className='btn btn-dash bg-blue-700 text-white hover:bg-blue-900'><a href="https://web.telegram.org/a/#2059911642">kursga yozilish</a></button>
+                        <Link to="/Krish"><button className="btn btn-primary">kursga yozilish</button></Link>
+                        <Routes>
+                        <Route path='/Krish' element={<Krish/>}/>
+                        </Routes>
                     </div>
                 </div>
             </div>
@@ -181,6 +185,7 @@ const Home = () => {
                 </div>
             </div>
         </div>
+</BrowserRouter>
     )
 }
 
