@@ -2,7 +2,7 @@ import React from 'react'
 
 const Krish = () => {
   return (
-    <div><div className="h-auto bg-gray-100 flex items-center justify-center px-6">
+    <div><div className="h-auto p-10 bg-gray-100 flex items-center justify-center px-6">
       <div className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         
         {/* LEFT: Login Card */}
@@ -23,7 +23,12 @@ const Krish = () => {
               <details>
                 <summary>qabullar</summary>
                 <ul className="p-2 bg-base-100 w-40 text-black z-1">
-                  
+                  <h3>Frontend</h3>
+                  <h3>Backend</h3>
+                  <h3>SMM</h3>
+                  <h3>Roboto-Texnika</h3>
+                  <h3>Soatxonlik</h3>
+                  <h3></h3>
                 </ul>
               </details>
             </li>

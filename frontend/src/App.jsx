@@ -18,7 +18,7 @@ const App = () => {
     <BrowserRouter>
     <div className='max-w-[1440px] m-auto'>
 
-      <div className="navbar sticky top-0 z-10 bg-black text-white bg-base-100 shadow-sm ">
+      <div className="navbar sticky top-0  z-10 bg-black text-white bg-base-100 shadow-sm ">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -46,7 +46,7 @@ const App = () => {
           </ul>
             </ul>
           </div>
-          <Link to="/"><a className="btn btn-ghost text-white hover:bg-gray text-xl max-sm:text-[20px]">Meta IT School</a></Link>
+          <Link to="/"><a className="btn btn-ghost text-white hover:bg-gray hover:text-black text-xl max-mb:text-[20px]">Meta IT School</a></Link>
         </div>
 
 
@@ -90,50 +90,49 @@ const App = () => {
       </Routes>
 
       
-<footer className="footer w-[100%] footer-horizontal bg-neutral text-neutral-content grid-rows-2 p-10 ">
-  <nav>
-    <h6 className="footer-title">Services</h6>
-       <ul className="flex flex-col gap-[3px]">
-                  <Link to='/Frontend'><li><a className="link link-hover">frontend</a></li></Link>
-                  <Link to='/Backend'><li><a className="link link-hover">Backend</a></li></Link>
-                  <Link to='/SMM'><li><a className="link link-hover">SMM</a></li></Link>
-                  <Link to='/Robototex'><li><a className="link link-hover">Roboto-texnika</a></li></Link>
-                  <Link to='/Grphik'><li><a className="link link-hover">Soatxonlik</a></li></Link>
-                  <Link to='/Kyber'><li><a className="link link-hover">kyber xavsizlik</a></li></Link>
+<footer className="footer w-[100%] font-mono  text-[30px] max-lg:text-[25px] max-sm:pb-[-0px] max-sm:text-[17px]max-md:mb-[15px] max-sm:text-[15px] max-sm:gap-[3px] max-md:gap-[7px] footer-horizontal  justify-evenly h-auto max-sm:h-[400px] bg-neutral text-neutral-content grid-rows-2 p-10 max-sm:p-7 ">
+  <nav className=''>
+       <ul className="flex flex-col gap-[15px] max-md:mb-[15px] max-sm:text-[15px] max-sm:gap-[3px] max-md:gap-[7px] ">
+    <h6 className="footer-title ">Services</h6>
+                  <Link to='/Frontend'><li><a className="link link-hover text-gray-200">frontend</a></li></Link>
+                  <Link to='/Backend'><li><a className="link link-hover text-gray-200">Backend</a></li></Link>
+                  <Link to='/SMM'><li><a className="link link-hover text-gray-200">SMM</a></li></Link>
+                  <Link to='/Robototex'><li><a className="link link-hover text-gray-200">Roboto-texnika</a></li></Link>
+                  <Link to='/Grphik'><li><a className="link link-hover text-gray-200">Soatxonlik</a></li></Link>
+                  <Link to='/Kyber'><li><a className="link link-hover text-gray-200">kyber xavsizlik</a></li></Link>
                 </ul>
   </nav>
   <nav>
+    <ul className='flex flex-col gap-[15px] max-md:mb-[10px] max-sm:text-[15px] max-sm:gap-[3px] max-md:gap-[7px] '>
     <h6 className="footer-title">Company</h6>
-    <ul>
-            <Link to="/Contact"><li><a className='link link-hover'>biz bilan aloqa!</a></li></Link>
-            <Link to="/About"><li><a className='link link-hover'>Biz haqqimizda</a></li></Link>
-          <Link to='/Krish'><a className='link link-hover'>Kirish</a></Link>
+            <Link to="/Contact"><li><a className='link link-hover text-gray-200'>biz bilan aloqa!</a></li></Link>
+            <Link to="/About"><li><a className='link link-hover text-gray-200'>Biz haqqimizda</a></li></Link>
+          <Link to='/Krish'><a className='link link-hover text-gray-200'>Kirish</a></Link>
     </ul>
   </nav>
-  <nav>
+  <nav className='flex flex-col gap-[10px] max-md:mb-[15px] max-sm:text-[15px] max-sm:gap-[3px] max-md:gap-[7px] '>
     <h6 className="footer-title">Legal</h6>
-    <a className="link link-hover">Terms of use</a>
-    <a className="link link-hover">Privacy policy</a>
-    <a className="link link-hover">Cookie policy</a>
+    <a className="link link-hover text-gray-200">Terms of use</a>
+    <a className="link link-hover text-gray-200">Privacy policy</a>
+    <a className="link link-hover text-gray-200">Cookie policy</a>
   </nav>
-  <nav>
+  <nav className='flex flex-col gap-[15px] max-md:mb-[15px] max-sm:text-[15px] max-sm:gap-[3px] max-md:gap-[7px] '>
     <h6 className="footer-title">Social</h6>
     <h1><a href="http://web.telegram.org/a/#2059911642" target="_blank" rel="noopener noreferrer">@metaitschool_admin</a></h1>
-    <h1><a href="https://www.instagram.com/metaitschool?igsh=MXdwdGxtcGMyZTkwMw==" className='link link-hover' target="_blank" rel="noopener noreferrer">Meta IT School</a></h1>
+    <h1><a href="https://www.instagram.com/metaitschool?igsh=MXdwdGxtcGMyZTkwMw==" className='link link-hover text-gray-200' target="_blank" rel="noopener noreferrer">Meta IT School</a></h1>
   </nav>
-  <nav>
-    <h6 className="footer-title">Explore</h6>
-    <a className="link link-hover">Features</a>
-    <a className="link link-hover">Enterprise</a>
-    <a className="link link-hover">Security</a>
-    <a className="link link-hover">Pricing</a>
+      <nav className='flex flex-col gap-[10px] max-md:mb-[15px] max-sm:text-[15px] max-sm:gap-[3px] max-md:gap-[7px] '>
+    <h6 className="footer-title">Legal</h6>
+    <a className="link link-hover text-gray-200">Terms of use</a>
+    <a className="link link-hover text-gray-200">Privacy policy</a>
+    <a className="link link-hover text-gray-200">Cookie policy</a>
   </nav>
-  <nav>
-    <h6 className="footer-title">Apps</h6>
-    <a className="link link-hover">Mac</a>
-    <a className="link link-hover">Windows</a>
-    <a className="link link-hover">iPhone</a>
-    <a className="link link-hover">Android</a>
+    <nav className='flex flex-col gap-[10px] max-md:mb-[15px] max-sm:text-[15px] max-sm:gap-[3px] max-md:gap-[7px] '>
+    <h6 className="footer-title">Company</h6>
+    <a className="link link-hover text-gray-200">About us</a>
+    <a className="link link-hover text-gray-200">Contact</a>
+    <a className="link link-hover text-gray-200">Jobs</a>
+    <a className="link link-hover text-gray-200">Press kit</a>
   </nav>
 </footer>
     </div>

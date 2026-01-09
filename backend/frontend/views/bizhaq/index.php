@@ -33,6 +33,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'id',
             'ism',
             'yonalish',
+            'rasm',
             [
                 'class' => ActionColumn::className(),
                 'urlCreator' => function ($action, Bizhaq $model, $key, $index, $column) {

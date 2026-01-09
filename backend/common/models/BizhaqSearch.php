@@ -18,7 +18,7 @@ class BizhaqSearch extends Bizhaq
     {
         return [
             [['id'], 'integer'],
-            [['ism', 'yonalish'], 'safe'],
+            [['ism', 'yonalish', 'rasm'], 'safe'],
         ];
     }
 
@@ -63,7 +63,8 @@ class BizhaqSearch extends Bizhaq
         ]);
 
         $query->andFilterWhere(['like', 'ism', $this->ism])
-            ->andFilterWhere(['like', 'yonalish', $this->yonalish]);
+            ->andFilterWhere(['like', 'yonalish', $this->yonalish])
+            ->andFilterWhere(['like', 'rasm', $this->rasm]);
 
         return $dataProvider;
     }

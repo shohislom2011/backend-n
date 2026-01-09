@@ -10,6 +10,7 @@ use Yii;
  * @property int $id
  * @property string $ism
  * @property string $yonalish
+ * @property string $rasm
  */
 class Bizhaq extends \yii\db\ActiveRecord
 {
@@ -29,9 +30,10 @@ class Bizhaq extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['ism', 'yonalish'], 'required'],
+            [['ism', 'yonalish', 'rasm'], 'required'],
             [['ism'], 'string', 'max' => 150],
             [['yonalish'], 'string', 'max' => 100],
+            [['rasm'], 'string', 'max' => 200],
         ];
     }
 
@@ -44,6 +46,7 @@ class Bizhaq extends \yii\db\ActiveRecord
             'id' => 'ID',
             'ism' => 'Ism',
             'yonalish' => 'Yonalish',
+            'rasm' => 'Rasm',
         ];
     }
 
