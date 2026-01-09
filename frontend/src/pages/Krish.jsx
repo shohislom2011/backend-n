@@ -13,8 +13,8 @@ const Krish = () => {
                 Ism.F
               </label>
               <input
-                type="email"
-                placeholder="email"
+                type="text"
+                placeholder="text"
                 className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-purple-500"
               />
             </div>
@@ -36,11 +36,12 @@ const Krish = () => {
               
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">
-                Password
+                Yoshingiz
               </label>
               <input
-                type="password"
-                placeholder="password"
+                type="text"
+                placeholder="Yoshingiz"
+                maxLength={2}
                 className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-purple-500"
               />
             </div>
@@ -54,7 +55,7 @@ const Krish = () => {
         </div>
 
         {/* RIGHT: Text */}
-        <div className="hidden lg:block">
+        <div className="">
           <h1 className="text-4xl font-extrabold text-gray-900 mb-6">
             Login now!
           </h1>

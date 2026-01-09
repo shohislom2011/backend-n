@@ -90,7 +90,7 @@ const App = () => {
       </Routes>
 
       
-<footer className="footer w-[100%] font-mono  text-[30px] max-lg:text-[25px] max-sm:pb-[-0px] max-sm:text-[17px]max-md:mb-[15px] max-sm:text-[15px] max-sm:gap-[3px] max-md:gap-[7px] footer-horizontal  justify-evenly h-auto max-sm:h-[400px] bg-neutral text-neutral-content grid-rows-2 p-10 max-sm:p-7 ">
+<footer className="footer w-[100%]  text-[20px] max-lg:text-[25px] max-sm:pb-[-0px] max-sm:text-[17px]max-md:mb-[15px] max-sm:text-[15px] max-sm:gap-[3px] max-md:gap-[7px] footer-horizontal  justify-evenly h-auto max-sm:h-[400px] bg-neutral text-neutral-content grid-rows-2 p-10 max-sm:p-7 ">
   <nav className=''>
        <ul className="flex flex-col gap-[15px] max-md:mb-[15px] max-sm:text-[15px] max-sm:gap-[3px] max-md:gap-[7px] ">
     <h6 className="footer-title ">Services</h6>
@@ -121,13 +121,13 @@ const App = () => {
     <h1><a href="http://web.telegram.org/a/#2059911642" target="_blank" rel="noopener noreferrer">@metaitschool_admin</a></h1>
     <h1><a href="https://www.instagram.com/metaitschool?igsh=MXdwdGxtcGMyZTkwMw==" className='link link-hover text-gray-200' target="_blank" rel="noopener noreferrer">Meta IT School</a></h1>
   </nav>
-      <nav className='flex flex-col gap-[10px] max-md:mb-[15px] max-sm:text-[15px] max-sm:gap-[3px] max-md:gap-[7px] '>
+      <nav className='flex flex-col gap-[10px] max-sm:hidden max-md:mb-[15px] max-sm:text-[15px] max-sm:gap-[3px] max-md:gap-[7px] '>
     <h6 className="footer-title">Legal</h6>
     <a className="link link-hover text-gray-200">Terms of use</a>
     <a className="link link-hover text-gray-200">Privacy policy</a>
     <a className="link link-hover text-gray-200">Cookie policy</a>
   </nav>
-    <nav className='flex flex-col gap-[10px] max-md:mb-[15px] max-sm:text-[15px] max-sm:gap-[3px] max-md:gap-[7px] '>
+    <nav className='flex flex-col gap-[10px] max-sm:hidden max-md:mb-[15px] max-sm:text-[15px] max-sm:gap-[3px] max-md:gap-[7px] '>
     <h6 className="footer-title">Company</h6>
     <a className="link link-hover text-gray-200">About us</a>
     <a className="link link-hover text-gray-200">Contact</a>

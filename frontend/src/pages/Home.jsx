@@ -142,7 +142,7 @@ const Home = () => {
       <Route path='/Krish' element={<Krish/>}/>
             </Routes>
 
-            <div className="w-100% h-a  bg-gray-300 rounded-t-3xl p-[20px] max-md:p-0">
+            <div className="">
                 <div className="w-[100%] flex max-lg:flex-col  max-lg:justify-center h-a rounded-t-3xl bg-white">
                     <div className="h-[100%] flex flex-col justify-center items-center max-lg:justify-center max-lg:w-[100%] max-lg:text-center  w-[50%] ">
                         <div className="">
@@ -155,9 +155,6 @@ const Home = () => {
                     <div className="flex justify-evenly items-center gap-[20px] flex-wrap">
                         {Bizhaq.map((value) => {
                             return (
-
-                                
-
                                         <div
                                             className=" w-[300px] flex items-center max-lg:flex   gap-4 px-5 py-4 max-sm:py-2 max-sm:px-3 max-lg:flex-col "
                                         >
