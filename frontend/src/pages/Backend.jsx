@@ -4,7 +4,6 @@ import Krish from './Krish'
 
 const Backend = () => {
   return (
-    <BrowserRouter>
     
     <div>
         <div>
@@ -45,7 +44,6 @@ const Backend = () => {
       </div>
     </div>
     </div>
-    </BrowserRouter>
   )
 }
 

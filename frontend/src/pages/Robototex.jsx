@@ -4,7 +4,6 @@ import Krish from './Krish'
 
 const Robototex = () => {
   return (
-    <BrowserRouter>
     
         <div>   <div>
       <div className=" mb-[40px] mt-[40px]">
@@ -13,7 +12,7 @@ const Robototex = () => {
           </div>
           <div className="flex justify-center">
             <Link to="/Krish"><button className="btn btn-primary">kursga yozilish</button></Link>
-            <Routes>
+          <Routes>
                         <Route path='/Krish' element={<Krish/>}/>
             </Routes>
         </div>
@@ -43,7 +42,6 @@ const Robototex = () => {
         </div>
       </div>
     </div></div>
-    </BrowserRouter>
   )
 }
 

@@ -4,7 +4,6 @@ import Krish from './Krish'
 
 const SMM = () => {
   return (
-    <BrowserRouter>
     
               <div>
             <div>
@@ -45,7 +44,6 @@ const SMM = () => {
       </div>
     </div>
     </div>
-    </BrowserRouter>
   )
 }
 

@@ -4,7 +4,6 @@ import Krish from './Krish'
 
 const Kyber = () => {
   return (
-    <BrowserRouter>
     
     <div>
           <div>
@@ -45,7 +44,6 @@ const Kyber = () => {
       </div>
     </div>
     </div>
-    </BrowserRouter>
   )
 }
 

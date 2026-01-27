@@ -4,7 +4,6 @@ import Krish from './Krish'
 
 const Frontend = () => {
   return (
-    <BrowserRouter>
     <div>
       <div className="mb-[40px] mt-[40px]">
         <div className="flex justify-center">
@@ -42,7 +41,6 @@ const Frontend = () => {
         </div>
       </div>
     </div>
-    </BrowserRouter>
   )
 }
 

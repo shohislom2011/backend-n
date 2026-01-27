@@ -23,7 +23,6 @@ useEffect(() => {
 
 
   return (
-    <BrowserRouter>
     
       <div>
 
@@ -95,7 +94,6 @@ useEffect(() => {
                 </div>
             </div>
     </div>
-    </BrowserRouter>
   )
 }
 

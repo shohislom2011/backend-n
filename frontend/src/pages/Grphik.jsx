@@ -4,7 +4,6 @@ import Krish from './Krish'
 
 const Grphik = () => {
   return (
-    <BrowserRouter>
     
     <div>
           <div>
@@ -45,7 +44,6 @@ const Grphik = () => {
       </div>
     </div>
     </div>
-    </BrowserRouter>
   )
 }
 

@@ -33,29 +33,20 @@ const Home = () => {
 
 
     return (
-<BrowserRouter>
 
         <div>
 
-            <div
-                className="hero min-h-[600px]"
-                style={{
-                    backgroundImage:
-                        "url(https://img.freepik.com/free-photo/still-life-books-versus-technology_23-2150062920.jpg?semt=ais_hybrid&w=740&q=80)",
-                }}
-            >
+            <div className="hero min-h-[600px]" style={{backgroundImage:"url(https://img.freepik.com/free-photo/still-life-books-versus-technology_23-2150062920.jpg?semt=ais_hybrid&w=740&q=80)",}}>
                 <div className="hero-overlay"></div>
                 <div className="hero-content text-neutral-content text-center">
                     <div className="max-w-md">
-                        <h1 className="mb-5 text-5xl font-bold">Meta IT School</h1>
+                        <h1 className="mb-5 text-5xl font-bold max-md:text-3xl">Meta IT School</h1>
                         <p className="mb-5">
                             Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
                             quasi. In deleniti eaque aut repudiandae et a id nisi.
                         </p>
-                        <Link to="/Krish"><button className="btn btn-primary">kursga yozilish</button></Link>
-                        <Routes>
-                        <Route path='/Krish' element={<Krish/>}/>
-                        </Routes>
+          <a href="https://t.me/metaitschool_admin" target="_blank" rel="noreferrer" className="btn btn-primary">Kursga yozilish</a>
+                        
                     </div>
                 </div>
             </div>
@@ -77,7 +68,8 @@ const Home = () => {
                             Meta IT School - Andijon shaxri,Leninskiy kochasi , Megasef Dorixonasi tog'risida
                         </p>
                         <div className="flex max-lg:justify-center">
-                            <button className='btn btn-dash bg-blue-700 text-white hover:bg-blue-900'><a href="https://web.telegram.org/a/#2059911642">kursga yozilish</a></button>
+          <a href="https://t.me/metaitschool_admin" target="_blank" rel="noreferrer" className="btn btn-primary">Kursga yozilish</a>
+                           
                         </div>
                     </div>
                 </div>
@@ -132,7 +124,8 @@ const Home = () => {
                                 <h2 className="card-title">{value.nomi}</h2>
                                 <p>{value.malumoti}</p>
                                 <div className="card-actions justify-end">
-                                    <Link to="/Krish"><button className="btn btn-primary">{value.narxi} So'm</button></Link>
+                                <a href="https://t.me/metaitschool_admin" target="_blank" rel="noreferrer" className="btn btn-primary"><button className="btn btn-primary">{value.narxi} So'm</button></a>
+                                    
                                 </div>
                             </div>
 
@@ -142,9 +135,7 @@ const Home = () => {
                 })}
             </div>
 
-            <Routes>
-      <Route path='/Krish' element={<Krish/>}/>
-            </Routes>
+          
 
             <div className="">
                 <div className="w-[100%] flex max-lg:flex-col  max-lg:justify-center h-a rounded-t-3xl bg-white">
@@ -185,7 +176,6 @@ const Home = () => {
                 </div>
             </div>
         </div>
-</BrowserRouter>
     )
 }
 
